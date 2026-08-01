@@ -112,20 +112,9 @@ body {
 .controls {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     min-height: 245px;
 }
-
-.d-pad {
-    position: relative;
-    width: 170px;
-    height: 170px;
-}
-
-.d-pad span { position: absolute; background: linear-gradient(145deg, #49494c, #222225); }
-.d-pad-horizontal { width: 170px; height: 60px; top: 55px; border-radius: 10px; }
-.d-pad-vertical { width: 60px; height: 170px; left: 55px; border-radius: 10px; }
-.d-pad-center { width: 48px; height: 48px; inset: 61px; border-radius: 50%; box-shadow: inset 4px 4px 8px #111; }
 
 .action-buttons {
     position: relative;
@@ -156,8 +145,6 @@ body {
 .btn-x { top: 75px; left: 2px; }
 .btn-b { top: 75px; right: 2px; }
 .btn-a { bottom: 1px; left: 74px; }
-.btn-empty { background: radial-gradient(circle at 35% 30%, #9b5470, #713047); }
-
 .bottom-details {
     display: flex;
     align-items: center;
@@ -179,7 +166,7 @@ body {
     .screen-frame { padding: 25px 24px 24px 58px; }
     .screen { height: 245px; border-width: 7px; }
     .power-indicator { left: 10px; top: 106px; }
-    .controls { transform: scale(.82); margin-inline: -35px; }
+    .controls { transform: scale(.82); }
     .bottom-details { margin-top: 0; gap: 18px; }
     .speaker { gap: 5px; }
     .speaker i { height: 55px; width: 5px; }

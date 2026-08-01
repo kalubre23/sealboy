@@ -30,14 +30,11 @@ function switchImageAndPlaySound(e) {
 
     stopEverything();
 
-    if (e.currentTarget.classList.contains("btn-empty")) {
-        return;
-    }
-
-    if (e.target.id === "aaa") {
+    if (e.currentTarget.dataset.video) {
         gif.style.display = "none";
 
         aaaVideo.style.display = "block";
+        aaaVideo.src = e.currentTarget.dataset.video;
         aaaVideo.play();
         startCounter();
         return;
@@ -65,7 +62,7 @@ function startCounter(){
 
     resetTimeout = setTimeout((e)=> {
         resetForm();
-    }, 10000)
+    }, 13000)
 }
 
 function resetForm(){
