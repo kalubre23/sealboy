@@ -97,6 +97,11 @@ body {
     box-shadow: none;
 }
 
+.console.powered-off #gif,
+.console.powered-off #aaaVideo {
+    display: none;
+}
+
 .console.powered-off .btn {
     cursor: default;
     filter: brightness(.65);
