@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seal Boy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="console">
+        <div class="top-line" aria-hidden="true"></div>
+
+        <section class="screen-frame">
+            <div class="power-indicator" aria-hidden="true">
+                <span id="powerLight"></span>
+                POWER
+            </div>
+
+            <div id="main" class="screen">
+                <img id="gif" src="images/jezik.png" alt="Foka">
+                <video id="aaaVideo" playsinline>
+                    <source src="images/AAA.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <div class="brand">SEAL <strong>BOY</strong></div>
+
+        <section class="controls">
+            <div class="d-pad" aria-hidden="true">
+                <span class="d-pad-horizontal"></span>
+                <span class="d-pad-vertical"></span>
+                <span class="d-pad-center"></span>
+            </div>
+
+            <div id="action-buttons" class="action-buttons">
+                <button class="btn btn-y" data-gif="images/dance.gif" data-sound="sounds/oceanman.mp3" aria-label="DANCE">
+                    <span>Y</span><small></small>
+                </button>
+                <button class="btn btn-x" id="aaa" aria-label="AAAA">
+                    <span>X</span><small></small>
+                </button>
+                <button class="btn btn-b" data-gif="images/UNCUNC.gif" data-sound="sounds/uncunc.mp3" aria-label="UNCUNC">
+                    <span>B</span><small></small>
+                </button>
+                <button class="btn btn-a btn-empty" aria-label="Prazno dugme">
+                    <span>A</span><small>&nbsp;</small>
+                </button>
+            </div>
+        </section>
+
+        <div class="bottom-details">
+            <button class="pill" id="powerOff" type="button"><i></i><span>POWER OFF</span></button>
+            <button class="pill" id="powerOn" type="button"><i></i><span>START</span></button>
+            <div class="speaker"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+    </main>
+</body>
+</html>
